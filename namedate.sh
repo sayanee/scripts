@@ -7,6 +7,9 @@
 # YYYY_MM_DD_HH_MM_SS_{argument}.{original_extension}
 # useful for renaming photos from a camera
 
+# TODO:
+# delete the old file
+
 for filename in *; do
   createddate=`stat -l -t '%F-%T' "$filename" | cut -f6 -d$' ' | tr '-' '_' | tr ':' '_'`
   event='_'$1'.'
