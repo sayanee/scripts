@@ -1,12 +1,15 @@
 #!/bin/bash
 
-# find all files in the current folder and rename them in the format:
-# YYYY_MM_DD_HH_MM_SS_bto.{original_extension}
-# TODO: configurable event as shell input
+# USAGE: namedate {event_name}
+
+# INFO:
+# find all files in the current folder and rename them in the format
+# YYYY_MM_DD_HH_MM_SS_{argument}.{original_extension}
+# useful for renaming photos from a camera
 
 for filename in *; do
   createddate=`stat -l -t '%F-%T' "$filename" | cut -f6 -d$' ' | tr '-' '_' | tr ':' '_'`
-  event='_bto.'
+  event='_'$1'.'
   extension="${filename##*.}"
   newfilename=$createddate$event$extension
 
