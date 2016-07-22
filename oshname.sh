@@ -4,6 +4,7 @@
 
 # INFO:
 # create a compressed zip folder for OSH Park from KiCad Gerber output files
+# OSH Park guidelines for filenames: https://oshpark.com/guidelines/
 # find all *.gbr and *.drl files in the directory_name
 # create a compressed zip file containing all the renamed files
 
