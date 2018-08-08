@@ -4,7 +4,5 @@
 
 ## Install
 
-1. copy the relevant shell script to your laptop
-3. execute the shell script 
-  - from the same folder with `./{FILENAME} {OPTIONS}`
-  - OR include the shell script path in your profile
+1. Ensure `/usr/local/bin` is part of `$PATH`
+1. Run `make install`
