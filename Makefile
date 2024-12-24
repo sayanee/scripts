@@ -1,9 +1,6 @@
 CURDIR = $(shell pwd)
 
-install:
-	rm -f /usr/local/bin/namedate
-	ln -s $(CURDIR)/namedate.sh /usr/local/bin/namedate
-
+install:G
 	rm -f /usr/local/bin/killport
 	ln -s $(CURDIR)/killport.sh /usr/local/bin/killport
 
