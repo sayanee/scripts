@@ -1,6 +1,6 @@
 CURDIR = $(shell pwd)
 
-install:G
+install:
 	rm -f /usr/local/bin/killport
 	ln -s $(CURDIR)/killport.sh /usr/local/bin/killport
 
